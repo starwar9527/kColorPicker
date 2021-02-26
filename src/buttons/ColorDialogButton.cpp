@@ -29,7 +29,7 @@ ColorDialogButton::ColorDialogButton(const QIcon &icon) : AbstractPopupMenuButto
 void ColorDialogButton::buttonClicked()
 {
     auto color = QColorDialog::getColor();
-    emit colorSelected(color);
+    if(color.isValid()) emit colorSelected(color);
 }
 
 } // namespace kColorPicker
