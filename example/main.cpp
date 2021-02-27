@@ -32,7 +32,7 @@ int main(int argc, char **argv)
     auto layout = new QVBoxLayout();
     auto colorPicker = new KColorPicker();
     colorPicker->setColor(QColor(Qt::red));
-    //change size of the colorPicker widget
+    //change the size of the colorPicker widget
 //    colorPicker->setFixedSize(150, 150);
 
     layout->addWidget(colorPicker);
